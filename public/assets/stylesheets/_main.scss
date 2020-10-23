@@ -1,0 +1,36 @@
+/*--------------------------
+    Imports All Abstarcts 
+----------------------------*/
+
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+/*--------------------------
+    Imports Base Styles
+----------------------------*/
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animations';
+
+/*--------------------------
+    Imports Components 
+----------------------------*/
+
+@import 'components/all-components';
+
+/*--------------------------
+    Imports Layout
+----------------------------*/
+
+@import 'layout/all-layouts';
+
+/*--------------------------
+    Imports Login
+----------------------------*/
+
+@import 'pages/all-pages';
+

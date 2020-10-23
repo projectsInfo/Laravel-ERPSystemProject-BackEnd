@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Master Screen Profile</title>
+    <link rel="stylesheet" href="stylesheets/vendor/animate.css"></link>
+    <link rel="stylesheet" href="Font-Awesome/all.min.css">
+    <link rel="stylesheet" href="stylesheets/vendor/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="stylesheets/main-ltr.css"></link>
+    <!-- For Arabic Language -->
+    <!-- <link rel="stylesheet" href="stylesheets/vendor/bootstrapRTL.min.css">
+                <link rel="stylesheet" href="stylesheets/main-rtl.scss"> -->
+</head>
+
+<body>
+    <section class="wrapper d-flex">
+
+        <!-- sidebar -->
+        <nav class="sidebar pb-5">
+        
+            <!-- Sidebar header (logo and comp name -->
+        
+            <div class="sidebar-header">
+                <div class="container">
+                    <div class="row position-relative">
+                        <div class="col-sm-12 logo d-flex justify-content-center">
+                            <img class="img-fluid" src="imgs/logo.png" alt="logo">
+                        </div>
+                        <div class="col-sm-12 logo-text justify-content-center mt-3">
+                            <h3 class="display-1">Achilles Shoes</h3>
+                        </div>
+                        <span class="close-sidebar"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Links -->
+            <ul class="list-unstyled">
+                <li>
+                    <a class="sidebar-link" href="#"><i class="fa fa-home fa-w-20"></i><span
+                            class="link-text">Dashboard</span> </a>
+                </li>
+                <li>
+        
+                    <a class="sidebar-link" href="#" role="button" id="sidebarLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div>
+                            <i class="fa fa-warehouse"></i> <span class="link-text">Warehouse</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+        
+                    <div class="dropdownMenu" aria-labelledby="sidebarLink">
+                        <a class="dropdownItem" href="#">Products</a>
+                        <a class="dropdownItem" href="#">Warehouse places</a>
+                    </div>
+        
+                </li>
+                <li>
+        
+                    <a class="sidebar-link" href="#" role="button" id="sidebarLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div>
+                            <i class="fa fa-users"></i> <span class="link-text">HR</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+        
+                    <div class="dropdownMenu" aria-labelledby="sidebarLink">
+                        <a class="dropdownItem" href="#">Departments</a>
+                        <a class="dropdownItem active" href="#">Manage users</a>
+                    </div>
+        
+                </li>
+                <li>
+        
+                    <a class="sidebar-link" href="#" role="button" id="sidebarLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div>
+                            <i class="fas fa-chart-pie"></i> <span class="link-text">CRM</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+        
+                    <div class="dropdownMenu" aria-labelledby="sidebarLink">
+                        <a class="dropdownItem" href="#">New Clients</a>
+                        <a class="dropdownItem" href="#">All Clients</a>
+                    </div>
+        
+                </li>
+                <li>
+        
+                    <a class="sidebar-link" href="#" role="button" id="sidebarLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div>
+                            <i class="fa fa-list-alt"></i> <span class="link-text">Orders</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+        
+                    <div class="dropdownMenu" aria-labelledby="sidebarLink">
+                        <a class="dropdownItem" href="#">New Orders</a>
+                        <a class="dropdownItem" href="#">All Orders</a>
+                    </div>
+        
+                </li>
+        
+                <li>
+        
+                    <a class="sidebar-link" href="#" role="button" id="sidebarLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div>
+                            <i class="far fa-handshake"></i> <span class="link-text">Out Sourcing</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+        
+                    <div class="dropdownMenu" aria-labelledby="sidebarLink">
+                        <a class="dropdownItem" href="#">New Orders</a>
+                        <a class="dropdownItem" href="#">All Orders</a>
+                    </div>
+        
+                </li>
+        
+                <li>
+        
+                    <a class="sidebar-link" href="#" role="button" id="sidebarLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div>
+                            <i class="fas fa-chart-line"></i> <span class="link-text">Accounting</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+        
+                    <div class="dropdownMenu" aria-labelledby="sidebarLink">
+                        <a class="dropdownItem" href="#">New Orderss</a>
+                        <a class="dropdownItem" href="#">All Orders</a>
+                    </div>
+        
+                </li>
+        
+                <li>
+        
+                    <a class="sidebar-link" href="#" role="button" id="sidebarLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div>
+                            <i class="fas fa-undo"></i> <span class="link-text">Returneds</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+        
+                    <div class="dropdownMenu" aria-labelledby="sidebarLink">
+                        <a class="dropdownItem" href="#">Reasons</a>
+                        <a class="dropdownItem" href="#">Returned Products</a>
+                    </div>
+        
+                </li>
+        
+            </ul>
+        </nav>
+
+        <!-- Content -->
+
+        <div class="content" >
+
+            <!-- Top Bar -->
+            
+            <nav class="topbar navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid flex-nowrap">
+            
+            
+                    <button class="sidebar-collapse" type="button" id="sidebarCollapse">
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                    </button>
+            
+                    <div class="user d-flex">
+                        <div class="bell">
+                            <a href="#"><i class="fa fa-bell"></i></a>
+                            </i>
+                        </div>
+            
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="userDropdownBtn" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Username
+                            </button>
+                            <div class="dropdown-menu" id="userDropdownMenu" aria-labelledby="topbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fa fa-user"></i> <span>profile</span></a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>
+                                    <span>logout</span></a>
+                            </div>
+                        </div>
+                        <div class="user-img bg-department">
+                            <img class="img-fluid" src="imgs/unknown-user.png" alt="user-img">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- Create a Add Warehose place -->
+            
+            <section id="tableSection" class="widget all-users">
+                <div class="container-fluid">
+                    <h1 class="widget-title mb-0">All Orders</h1>
+
+                    <div class="widget-content mt-5">
+                        <form class="general-form">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-lg-5">
+                                    <div class="form-group">
+                                        <label for="username">Search</label>
+                                        <input type="search" class="form-control" id="filter" placeholder="Type to search...">
+                                    </div>
+
+                                </div>
+
+                                <div class="col-7 col-sm-3 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="departments">Filter By</label>
+                                        <select id="filter" class="form-control">
+                                            <option class="form-control">Name</option>
+                                            <option class="form-control">Phone</option>
+                                            <option class="form-control">Username</option>
+                                            <option class="form-control">Department</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-sm-3 col-lg-3">
+                                    <button type="button" id="search_btn" class="general-btn search_btn">
+                                        <i class="fas fa-search"></i> Search </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- All users table -->
+
+                        <div class="general-table">
+                            <table id="generalTable" class="text-center table-edit table">
+                                <thead>
+                                    <tr class="row-edit">
+                                        <th><span>No.</span></th>
+                                        <th><span>Order id</span></th>
+                                        <th><span>Client name</span></th>
+                                        <th><span>Phone</span></th>
+                                        <th><span>Order Date</span></th>
+                                        <th><span>Order Out Date</span></th>
+                                        <th><span>Total</span></th>
+                                        <th><span>Status</span></th>
+                                        <th><span>Action</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row-edit ">
+                                        <td data-label="No."><span>1</span></td>
+                                        <td data-label="Order id" class="filter-cell"><span>15468</span></td>
+                                        <td data-label="Client name"><span>mashm mohamed avbad</span></td>
+                                        <td data-label="Phone"><span>01141959562</span></td>
+                                        <td data-label="Order Date"><span>01/02/2019</span></td>
+                                        <td data-label="Order Out Date"><span>01/05/2019</span></td>
+                                        <td data-label="Total"><span>150 eg</span></td>
+                                        <td data-label="Status"><span>Avilable</span></td>
+                                        <td data-label="Action">
+                                            <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                <span><i class="fas fa-edit fa-fw"></i></span>
+                                            </button>
+                                            <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="btn delet">
+                                                <span><i class="fas fa-times fa-fw"></i></span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-edit ">
+                                        <td data-label="No."><span>1</span></td>
+                                        <td data-label="Order id" class="filter-cell"><span>15468</span></td>
+                                        <td data-label="Client name"><span>mashm mohamed avbad</span></td>
+                                        <td data-label="Phone"><span>01141959562</span></td>
+                                        <td data-label="Order Date"><span>01/02/2019</span></td>
+                                        <td data-label="Order Out Date"><span>01/05/2019</span></td>
+                                        <td data-label="Total"><span>150 eg</span></td>
+                                        <td data-label="Status"><span>Avilable</span></td>
+                                        <td data-label="Action">
+                                            <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                <span><i class="fas fa-edit fa-fw"></i></span>
+                                            </button>
+                                            <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="btn delet">
+                                                <span><i class="fas fa-times fa-fw"></i></span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                            
+                            
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+
+                        <div class="mt-4 pagination d-flex justify-content-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&lsaquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="PaginationActive page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&rsaquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+        </div>
+    </section>
+       
+
+
+
+    <!-- Start Global Script -->
+    <script src="scripts/vendor/jquery-3.4.1.min.js"></script>
+    <script src="scripts/vendor/popper.min.js"></script>
+    <script src="scripts/vendor/bootstrap.min.js"></script>
+    <script src="scripts/vendor/jquery.tablefilter.min.js"></script>
+    <script src="Font-Awesome/all.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- End Global Script -->
+
+    <!-- Start Custem Pages Script -->
+    <script src="scripts/modules/orders/all-orders/all-orders.js"></script>
+    <!-- End Custem Pages Script -->
+</body>
+
+</html>

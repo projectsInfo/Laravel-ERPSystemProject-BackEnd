@@ -1,0 +1,30 @@
+.cabinet-page {
+    .income-btn {
+        @include margin($right:30px);
+    }
+    .income-btn, .exchange-btn {
+        padding:6px 35px;
+        height:auto;
+    }
+
+    label {
+        white-space: nowrap;
+    }
+    .td-account {
+        div {
+            border-bottom:1px solid #ddd;
+            @include padding($top:3px,$bottom:3px);
+        }
+        span {
+            &:first-of-type {
+                @include padding($top:3px,$bottom:3px);
+                border-#{$end}:1px solid #ddd;
+            }
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        td:before {
+            content: attr(data-label);
+        }
+    }
+}

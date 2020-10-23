@@ -1,0 +1,165 @@
+.add-new-order {
+    .nav-pills {
+        flex-wrap: nowrap;
+
+        .nav-item {
+
+            .nav-link-first,
+            .nav-link-last {
+                font-size: 14px;
+                @include padding($top:13px, $bottom:12px);
+                background: color(primary);
+                color: color(white-color);
+                z-index: 3;
+
+                @media (max-width:393px) {
+                    @include padding($top:8px, $bottom:8px);
+                }
+            }
+
+            .nav-link-first {
+                // border-radius: 20px 0;
+
+                border-top-#{$start}-radius: 20px;
+                border-top-#{$end}-radius: 0;
+                border-bottom-#{$end}-radius: 20px;
+                border-bottom-#{$start}-radius: 0;
+                border-top: 1px solid #ddd;
+                border-#{$start}: 1px solid #ddd;
+            }
+
+            .nav-link-last {
+                border-top-#{$start}-radius: 0;
+                border-top-#{$end}-radius: 20px;
+                border-bottom-#{$end}-radius: 0;
+                border-bottom-#{$start}-radius: 20px;
+                border-top: 1px solid #ddd;
+                border-#{$end}: 1px solid #ddd;
+            }
+
+            .nav-link.active {
+                background: color(white-color);
+                color: color(primary);
+            }
+        }
+    }
+
+    .tab-content {
+        position: relative;
+        @include margin($top:0, $right:0, $bottom:2.25rem, $left:0);
+        border-#{$start}: 1px solid #ddd;
+        border-#{$end}: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        @include padding($top:2rem, $right:1.5rem, $bottom:2rem, $left:1.5rem);
+        border-radius: 0 0 20px 20px;
+
+        .form-group {
+            .social {
+                display: flex;
+                flex-wrap: nowrap;
+
+                label {
+                    border-radius: 5px;
+                    width: 40px;
+                    height: 40px;
+                    @include margin($right:5px);
+                    border: 1px solid #ddd;
+                    cursor: pointer;
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: #ddd;
+                    // &:nth-of-type(3) {
+                    //     pointer-events: none !important;
+                    //     opacity: .5 !important;
+                    // }
+                }
+
+                input[type="checkbox"] {
+                    appearance: none;
+    
+                    &:checked+label {
+                        color: color(white-color);
+                        animation: IconsBoxShadow .3s 1;
+                        border: none;
+                    }
+    
+                    &:checked+label:nth-of-type(1) {
+                        background-color: #4267B2;
+                    }
+    
+                    &:checked+label:nth-of-type(2) {
+                        background-color: #20A413;
+                    }
+    
+                    &:checked+label:nth-of-type(3) {
+                        background-color: #15AABF;
+                        
+                    }
+                }
+            }
+        }
+
+        .prev-clients {
+
+            
+            tbody tr {
+                cursor: pointer;
+                transition: box-shadow 0.3s;
+            }
+
+            tr.selected {
+                
+                background-color: #f7f7f7;
+            }
+
+            // input[type="radio"] {
+            //     appearance: none;
+
+            //     &:checked+label {
+            //         color: color(white-color);
+            //         border: 1px solid #ddd;
+            //         height: 40px;
+            //         width: 40px;
+            //     }
+            // }
+
+            select.status-dropdown {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 14px;
+                @include padding((10px));
+                cursor: pointer;
+                color: color(primary);
+                background-size: 40px 37px;
+            }
+
+            td[data-label="Client Address(s)"] label {
+                @include padding(10px 20px);
+                border-radius: 10px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            td[data-label="Client Address(s)"] label.selected {
+                background: color(primary);
+                color: #fff;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            #{$end}: 0;
+            width: calc(100% - 259.13px);
+            height: 1px;
+            background: #ddd;
+        }
+    }
+    .show-current-product, .show-product {
+        @media (max-width:767px) {
+            width:100%;
+            margin-top:16px;
+        }
+    }
+}

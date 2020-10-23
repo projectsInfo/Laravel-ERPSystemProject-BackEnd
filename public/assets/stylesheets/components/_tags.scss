@@ -1,0 +1,42 @@
+.tag {
+    display: inline-block;
+    background-color: color(primary);
+    color: color(white-color);
+    @include margin($top: 10px, $right: 10px, $bottom: 10px, $left:0);
+    @include padding(10px 13px);
+    border-radius: 5px;
+
+}
+
+.color-tag {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+
+    .color-circle {
+
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid color(white-color);
+    }
+
+    .color-name {
+        @include margin($left: 10px);
+    }
+
+    .delete-tag {
+        color: color(white-color);
+        background: color(error);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+
+        cursor: pointer;
+        @include margin($left: 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

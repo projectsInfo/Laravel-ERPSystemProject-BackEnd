@@ -1,0 +1,141 @@
+.topbar {
+
+    // Top bar styles
+    position: sticky;
+    top:0;
+    z-index: 500;
+    background-color: #fff;
+    box-shadow: 0 1px 6px color(light-grey);
+    @include padding($left:1.5625rem, $right:1.5625rem);
+    #sidebarCollapse {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .short-line {
+            width: 15px;
+            height: 2.5px;
+            @include margin($bottom:2px);
+            background-color: color(primary);
+            @include mediumScreen {
+                width: 20px;
+            }
+            transition: width 0.3s;
+        }
+
+        .long-line {
+            width: 20px;
+            @extend .short-line;
+            &:last-child {
+                @include margin($bottom:0);
+            }
+
+            transition: width 0.3s;
+        }
+
+        &.rotate {
+            transform: rotate(90deg);
+            transition: transform 0.5s linear;
+        }
+
+        &.rotate-back {
+            transform: rotate(-90deg);
+            transition: transform 0.5s linear;
+        }
+    }
+
+    // Top bar user
+
+    .user {
+        align-items: center;
+        color: color(primary);
+        justify-content: flex-end;
+        color: color(primary);
+
+        // user image div
+        .user-img {
+            cursor: pointer;
+            max-width: 8%;
+            img {
+                border-radius: 50%;
+                border: 1px solid #ccc;
+            }
+        }
+
+        &>div {
+            @include margin((0 10px));
+        }
+
+        // user notification
+        .bell {
+            font-size: 20px;
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 18px;
+                width: 8px;
+                height: 8px;
+                background: color(secondary);
+                border-radius: 50%;
+            }
+        }
+
+        .lang a {
+            font-size: 14px;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            line-height: 35px; 
+            background: color(primary);
+            color: #fff;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.4s;
+
+            &:hover {
+                background: color(secondary);
+            }
+
+        }
+
+        // dropdown div holder
+        .dropdown {
+            .btn {
+                color: color(primary);
+                border: none;
+                outline: none !important;
+                box-shadow: none;
+            }
+
+            // dropdown div
+            .dropdown-menu {
+                @include padding((5px 10px));
+                min-width: 8rem;
+                border-radius: 5px;
+                border: none;
+                box-shadow: 0 0 5px #ccc;
+
+                //dropdown links
+                .dropdown-item {
+                    @include padding((5px));
+                    color: color(primary);
+                    span {
+                        @include padding($left:10px);
+                    }
+                    &:active {
+                        background:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar-folded:not(.open-sidebar-folded) .topbar {
+    .short-line {
+        width: 20px !important;
+    }
+}

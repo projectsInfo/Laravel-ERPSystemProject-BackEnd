@@ -1,0 +1,25 @@
+.widget.add-warehouse-place {
+
+    .widget-container {
+        padding: 2rem 1rem;
+        overflow-y: auto;
+        max-height: 572px;
+    }
+
+    .add-warehouse-place {
+        .form-control {
+            @include margin($top:0, $right:0, $bottom:0, $left:0);
+        }
+
+        .create-stockman-info {
+            select {
+                display: inline-block;
+            }
+        }
+    }
+
+    .bg-warehouse {
+        background: url('../imgs/banner3.jpg') no-repeat top center;
+        background-size: 100% 100%;
+    }
+}

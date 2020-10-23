@@ -1,0 +1,45 @@
+.department-page {
+    .department-types {
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .check-all {
+            .check-btn {
+                font-size:15px !important;
+                @extend .checkbox-label;
+            }
+        }
+        .checkbox-label {
+            background: color(primary);
+            letter-spacing: 1px;
+
+            color: color(white-color);
+            @include padding($top:11px, $right:10px, $bottom:11px, $left:10px);
+            @include margin($top: 20px, $bottom: 0, $left: 2px, $right: 5px);
+            border-radius: 5px;
+            text-align: center;
+            background: color(primary);
+            cursor: pointer;
+            max-width: 150px;
+            font-size: 12px;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            
+        }
+    }
+
+    .bg-department {
+        background: url("../imgs/dep1.jpg") no-repeat;
+        background-size: 100% 100%;
+        background-position: center
+    }
+
+    // validation error styles for checkbox 
+    .error {
+        width: 100%;
+        order: 3;
+    }
+}

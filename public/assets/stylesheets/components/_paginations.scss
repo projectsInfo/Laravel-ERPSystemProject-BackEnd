@@ -1,0 +1,52 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .page-item {
+        @include margin($right: 5px, $top: 6px);
+        &:last-of-type{
+            @include margin($right: 0);
+        }
+        .page-link {
+            border-radius: 50%;
+            background: #fff;
+            color: #484848;
+            margin-right: 3px;
+            padding: 0;
+            width: 36px;
+            height: 36px;
+            font-size: 14px;
+            line-height: 36px;
+            text-align: center;
+            box-shadow: 0 2px 5px #ddd;
+        }
+        &.active .page-link {
+            border: none;
+            background: #484848 !important;
+            color: #fff !important;
+        }
+        &.disabled{
+            opacity: 0.5;
+        }
+    }
+   
+    
+}
+
+/* media from 1024px */
+@include smallScreen {
+    .pagination {
+        
+        .page-item {
+        
+            .page-link {
+                border-radius: 50%;
+                margin-right: 3px;
+                width: 30px !important;
+                height: 30px !important;
+                font-size: 13px !important;
+                line-height: 30px !important;
+            }
+        }
+    }
+}

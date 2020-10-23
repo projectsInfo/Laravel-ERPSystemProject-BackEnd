@@ -1,0 +1,31 @@
+button {
+    background-color: inherit;
+    outline: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+        box-shadow: none !important;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    user-select: none;
+}

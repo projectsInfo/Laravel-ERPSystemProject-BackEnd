@@ -1,0 +1,15 @@
+.create-procuts {
+    .selling-price {
+        &::after {
+            position: absolute;
+            top:39px;
+            #{$end}:0;
+            content:'eg';
+        }
+    }
+    .form-horizontal {
+        overflow-y: auto;
+        height:370px;
+        border:1px solid #ddd;
+    }
+}

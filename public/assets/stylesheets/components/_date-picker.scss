@@ -1,0 +1,72 @@
+.ui-widget.ui-widget-content {
+    border: none;
+    padding: 0;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ui-datepicker .ui-datepicker-header {
+    border: none;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: color(white-color);
+    background: color(primary);
+
+    & > a {
+        border: none;
+        transform: all 0.5s;
+        color: color(white-color);
+        &:hover {
+            background: color(secondary);
+
+        }
+    }
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    text-align: center;
+    border: none;
+}
+
+.ui-datepicker td {
+    padding: 3px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none;
+    color: color(primary);
+    background: color(white-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    color: color(white-color);
+    background: color(primary);
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    color: color(white-color);
+    background: color(secondary);
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    padding: 0;
+}

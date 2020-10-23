@@ -1,0 +1,52 @@
+.invoice-bg {
+    background: #C8C8C8;
+    min-height: 100vh;
+    @include padding($top:50px, $bottom: 50px);
+    .invoice-content {
+        border-top:20px solid color(primary);
+        background:color(white-color);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        h1.widget-title {
+            margin-bottom: 50px;
+            color: color(primary);
+            text-transform: uppercase;
+            font-size: 2rem;
+
+            &:after {
+                content: "";
+                border-radius: 10px;
+                background-color: color(secondary);
+                width: 30%;
+                height: 12px;
+                margin-top: 15px;
+                display: block;
+            }
+        }
+        .client-info {
+            border-bottom:1px solid #707070;
+            div {
+                font-weight: 700;
+                @include padding($bottom:20px);
+            }
+            ul {
+                li {
+                    font-size:1rem;
+                    @include padding((5px 0));
+                    font-weight: 600;
+                }
+            }
+        }
+        .print-invoice {
+            .btn {
+                width: 15%;
+                min-width: 150px;
+                @include padding((0.85rem 0));
+                background-color: color(success-light);
+                color: color(white-color);
+                font-size: 1.1rem;
+                user-select: none;
+            }
+        }
+    }
+}

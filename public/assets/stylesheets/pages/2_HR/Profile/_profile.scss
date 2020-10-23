@@ -1,0 +1,216 @@
+.user-info-form {
+
+    aside {
+
+        img {
+            width: 100%;
+        }
+    }
+    .profile-img-wrapper{
+        width: 100% !important;
+        height:200px !important;
+
+        .img-text{
+
+            @include padding($width: 20px 0 !important);
+
+            h3 {
+                @include padding($width: 15px 0 !important);
+                font-size: 1.3rem !important;
+            }
+        }
+        .file-upload{
+            width: inherit;
+        }
+    }
+
+    .title {
+        font-size: 1.2rem;
+        color: color(secondary);
+        text-transform: uppercase;
+    }
+
+    .top-section {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .ranking {
+            padding: 50px 0;
+
+            span.rank {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+    .bottom-section {
+
+        ul {
+            a {
+                color: blue;
+                text-decoration: underline;
+            }
+        }
+
+        .save {
+            margin-top: 20px;
+            width: 30%;
+            margin-top: 5rem;
+            padding: 15px 10px;
+            text-transform: uppercase;
+
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+
+        .cancel {
+            @extend .save;
+        }
+
+        .form-control {
+            display: inline-block;
+            margin-left: 1rem;
+            width: 60%
+        }
+
+        .col-md-10{
+            padding-left: 40px !important;
+            @include smallScreen {
+              padding-left: 0 !important;  
+            }
+        }
+        .error {
+            padding-left: 20px;
+        }
+
+        .info {
+            font-size: 0.8rem;
+            margin-left: 1rem;
+        }
+
+        .form-group {
+           margin: 20px 0;
+           span.static-labels, ul.static-labels
+           {
+               display: block;
+               padding-left : 15px;
+           }  
+        }
+
+        label {
+            font-size: 1rem;
+        }
+    }
+
+    .edit-form {
+        display: none;
+    }
+
+    .profile-img-wrapper {
+        display: none;
+    }
+}
+
+
+/* -- style profile page for small screens -- */
+@include smallScreen{
+    form.user{
+        aside{
+            .pb-5{
+                padding-bottom: 20px !important;
+            }
+        }
+        .profile-img-wrapper{
+            width: 80% !important;
+
+            .img-text{
+
+                @include padding($width: 10px 0 !important);
+
+                h3 {
+                    @include padding($width: 15px 0 !important);
+                    font-size: 1.3rem !important;
+                }
+            }
+            .file-upload{
+                width: inherit;
+            }
+       
+        }
+        .img-thumbnail{
+            width: 50%;
+            @include margin($width: auto);
+            display: block;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.7rem !important;
+        }
+        .top-section{
+            .departments-label{
+                text-align: center;
+                font-size: 1.3rem !important;
+            }
+            
+            .ranking{
+
+                @include padding($width: 20px 0);
+
+                .title{
+                    display: inline-block;
+                    @include margin($right: 10px);
+                }
+                .rank{
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+
+        .bottom-section{
+            .form-group{
+                /*@include margin($width: 10px 0 !important);*/
+                .form-control {
+                    width: 80% !important;
+                    margin-top: 0 !important;
+                    @include smallScreen {
+                        width: 95% !important;
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    form.user{
+        .img-text{
+
+            .icon-image{
+                font-size: 2rem !important;
+            }
+
+            h3 {
+                font-size: 1.1rem !important;
+            }
+        }
+        
+        .edit-form{
+            .form-control{
+                margin-bottom: 10px;
+            }
+            .btn{
+                display: inline-block !important;
+                @include margin($left:15px);
+            }
+        }
+    }    
+}

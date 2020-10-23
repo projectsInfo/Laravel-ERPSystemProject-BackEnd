@@ -1,0 +1,15 @@
+.all-sections-supplier {
+    .form-control {
+
+        @include smallScreen {
+            width: calc(100% - 53.5px) !important;
+        }
+    }
+    .widget-content {
+        display: none;
+    }
+    .bg-supplier {
+        background: url('../imgs/supp.png') no-repeat top center;
+        background-size: 100% 100%;
+    }
+}

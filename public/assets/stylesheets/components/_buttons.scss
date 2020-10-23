@@ -1,0 +1,119 @@
+// general button styles
+
+.general-btn {
+    background-color: color(primary);
+    color: color(white-color);
+    cursor: pointer;
+    border: none;
+    border-radius: .4rem;
+    box-shadow: 1px 1px 5px #ddd;
+    letter-spacing: 1px;
+    @include padding(10px 15px);
+    user-select: none;
+    font-weight: bold;
+    height: calc(1.5em + .95rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: .25rem;
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(241, 141, 64, 0.8);
+    }
+
+    &:hover {
+        color: #fff;
+        background: color(secondary);
+    }
+}
+
+.danger {
+    background-color: color(error);
+}
+
+.search_btn {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .fa-search {
+        @include margin($right: 7px);
+    }
+}
+
+.save-btn {
+    border: 2px solid transparent;
+    width: 15%;
+    min-width: 150px;
+    @include padding((0.85rem 0));
+    background-color: color(success-light);
+    color: color(white-color);
+
+    .fa-save {
+        @include margin($right:3px);
+    }
+
+    @include mobileScreen {
+        width: 100% !important;
+        @include padding((0.65rem 0) !important);
+    }
+
+    &:hover {
+        color: color(success-light);
+        background-color: color(white-color);
+        border-color: color(success-light);
+    }
+}
+
+.reset-btn {
+    border: 2px solid transparent;
+    width: 15%;
+    min-width: 150px;
+    @include padding((0.85rem 0));
+    background-color: color(error);
+    color: color(white-color);
+
+    .fa-times-circle {
+        @include margin($right:3px);
+    }
+
+    @include mobileScreen {
+        width: 100% !important;
+        @include padding((0.65rem 0) !important);
+    }
+
+    &:hover {
+        color: color(error);
+        background-color: color(white-color);
+        border-color: color(error);
+    }
+}
+
+.excelfile-btn {
+    background-color: color(error);
+    color: color(white-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+.print-btn {
+    background-color: color(success-light);
+    color: color(white-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btns {
+    justify-content: space-evenly;
+    @include margin((40px));
+    @include smallScreen {
+        margin:40px 10px !important;
+    }
+    button {
+        @include smallScreen {
+            width:100%;
+            @include margin((10px 0));
+        }
+    }
+}

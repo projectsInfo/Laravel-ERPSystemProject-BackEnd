@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Master Screen Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/vendor/animate.css">
+    <link rel="stylesheet" href="Font-Awesome/all.min.css">
+    <link rel="stylesheet" href="stylesheets/vendor/bootstrapltr.min.css">
+    <link rel="stylesheet" href="stylesheets/main-ltr.css">
+    <!-- For Arabic Language -->
+    <!-- <link rel="stylesheet" href="stylesheets/vendor/bootstrapRTL.min.css">
+        <link rel="stylesheet" href="stylesheets/main-rtl.scss"> -->
+</head>
+
+<body>
+
+    <section class="wrapper d-flex">
+        <!-- sidebar -->
+        <nav class="sidebar">
+
+            <!-- Sidebar header (logo and comp name -->
+
+            <div class="sidebar-header">
+                <div class="container">
+                    <div class="row position-relative">
+                        <div class="col-sm-12 logo d-flex justify-content-center">
+                            <img class="img-fluid" src="imgs/logo.png" alt="logo">
+                        </div>
+                        <div class="col-sm-12 logo-text justify-content-center">
+                            <h3 class="display-1">Achilles Shoes</h3>
+                        </div>
+                        <span class="close-sidebar"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Links -->
+            <ul class="list-unstyled nice">
+                <!-- 1 Home Dashboard -->
+                <li>
+                    <a class="sidebar-link collapsed dashboard active" href="#">
+                        <div>
+                            <i class="fa fa-home fa-w-20"></i> <span class="link-text">Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+                <!-- 2 HR Menu : New Clients - All Clients -->
+                <li>
+                    <a class="sidebar-link collapsed" href="#hrSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fa fa-users"></i> <span class="link-text">HR</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="hrSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li>
+                            <a class="submenu-link" href="#">Manage users</a>
+                        </li>
+                        <li>
+                            <a class="submenu-link" href="#">Departments</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 3 CRM Menu : New Clients - All Clients -->
+                <li>
+                    <a class="sidebar-link collapsed" href="#crmSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fas fa-chart-pie"></i> <span class="link-text">CRM</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="crmSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li>
+                            <a class="submenu-link" href="#">New Clients</a>
+                        </li>
+                        <li>
+                            <a class="submenu-link" href="#">All Clients</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 4 Orders Menu : New Orders - All Orders -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#ordersSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fa fa-list-alt"></i> <span class="link-text">Orders</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="ordersSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">New Orders</a></li>
+                        <li><a class="submenu-link" href="#">All Orders</a></li>
+                    </ul>
+
+                </li>
+                <!-- 5 Outsourcing Menu : Suppliers - Delivery Company -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#outsourcingSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="far fa-handshake"></i> <span class="link-text">Outsourcing</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="outsourcingSubMenu" class="collapse list-unstyled link-submenu"
+                        aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Suppliers</a></li>
+                        <li><a class="submenu-link" href="#">Delivery Company</a></li>
+                    </ul>
+
+                </li>
+                <!--  6 Warehouse Menu : Warehouses - Suppliers Orders - Products - Reports -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#warehouseSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fa fa-warehouse"></i> <span class="link-text">Warehouse</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="warehouseSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Warehouse Places</a></li>
+                        <li><a class="submenu-link" href="#">Products</a></li>
+                        <li><a class="submenu-link" href="#">Reports</a></li>
+                    </ul>
+
+                </li>
+                <!--  7 Accounting Menu : Discounts - Chipping Fees - Invoices -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#accountingSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fas fa-chart-line"></i> <span class="link-text">Accounting</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="accountingSubMenu" class="collapse list-unstyled link-submenu"
+                        aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Discounts</a></li>
+                        <li><a class="submenu-link" href="#">Chiping Fees</a></li>
+                        <li><a class="submenu-link" href="#">Invoices</a></li>
+                    </ul>
+
+                </li>
+                <!--  8 Returned Menu : Reasons - Products Returned -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#returnedsSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fas fa-undo"></i> <span class="link-text">Returneds</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="returnedsSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Reasons</a></li>
+                        <li><a class="submenu-link" href="#">Returned Products</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Content -->
+
+        <div class="content">
+
+            <!-- Top Bar -->
+
+            <nav class="topbar navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid flex-nowrap">
+
+
+                    <button class="sidebar-collapse" type="button" id="sidebarCollapse">
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                    </button>
+
+                    <div class="user d-flex">
+                        <div class="bell">
+                            <a href="#"><i class="fa fa-bell"></i></a>
+                        </div>
+
+                        <div class="lang">
+                            <a href="#">en</a>
+                            <a href="#" class="d-none">ar</a>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="userDropdownBtn"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Username
+                            </button>
+                            <div class="dropdown-menu" id="userDropdownMenu" aria-labelledby="topbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fa fa-user"></i> <span>profile</span></a>
+                                <a class="dropdown-item" href="#"><i
+                                        class="fas fa-sign-out-alt"></i><span>logout</span></a>
+
+                            </div>
+                        </div>
+
+                        <div class="user-img">
+                            <img class="img-fluid" src="imgs/unknown-user.png" alt="user-img">
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+            <main>
+
+                <section class="widget suppliers-order">
+                    <div class="container-fluid">
+                        <p id="productStyle" class="h2">Style</p>
+                        <p id="productMaterial" class="h2">Material</p>
+                        <h1 class="widget-title mb-0">Product Name</h1>
+                        <div class="mt-3">
+                            <div class="control">
+                                <div class="total">
+                                    <p><span>Total Quntity:</span><span id="totalQuan">0</span></p>
+                                    <p><span>Total Price:</span><span id="totalPrice">0</span>&nbsp;EGP</p>
+                                </div>
+                            </div>
+                            <form class="general-search">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-lg-5">
+                                        <div class="form-group">
+                                            <label for="username">Search</label>
+                                            <input type="search" class="form-control" id="filter" placeholder="Type to search...">
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-7 col-sm-3 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="departments">Filter By</label>
+                                            <select id="filter" class="form-control">
+                                                <option class="form-control">Barcode</option>
+                                                <option class="form-control">Color</option>
+                                                <option class="form-control">Size</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        
+                            <div class="general-table table-responsive-md supplier-table">
+                                <table id="generalTable" class="text-center table-edit table">
+                                    <thead>
+                                        <tr class="row-edit">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <th>ID</th>
+                                                </div>
+                                                <div class="col">
+                                                    <th>Barcode</th>
+                                                </div>
+                                                <th><span>Name</span></th>
+                                                <th><span>Material</span></th>
+                                                <th><span>Style</span></th>
+                                                <th><span>Size</span></th>
+                                                <th><span>Colors</span></th>
+                                                <th><span>Quantity</span></th>
+                                                <th><span>Price</span></th>
+                                                <th><span>Status</span></th>
+                                                <th><span>Action</span></th>
+                            
+                                            </div>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </section>
+
+
+    <!-- Start Global Script -->
+    <script src="scripts/vendor/jquery-3.4.1.min.js"></script>
+    <script src="scripts/vendor/popper.min.js"></script>
+    <script src="scripts/vendor/bootstrap.min.js"></script>
+    <script src="scripts/vendor/jquery.tablefilter.min.js"></script>
+    <script src="scripts/vendor/jquery.validate.min.js"></script>
+    <script src="Font-Awesome/all.min.js"></script>
+    <script src="scripts/vendor/jquery.nicescroll.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- End Global Script -->
+
+</body>
+
+</html>

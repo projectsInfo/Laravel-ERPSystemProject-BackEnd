@@ -1,0 +1,84 @@
+// delete user div
+.modal-content.cancel {
+    border-top-#{$start}-radius: 5px;
+    border-top-#{$end}-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border: none;
+    background: transparent;
+
+    .top {
+        background: linear-gradient(150deg, #F15757 50%, #E45555 50%);
+        color: #fff;
+        border-top-#{$start}-radius: 5px;
+        border-top-#{$end}-radius: 5px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 10px 20px;
+
+        span {
+            font-size: 4rem;
+
+        }
+
+        h1 {
+            font-size: 30px;
+            @include padding($bottom:17px);
+
+            @include mediumScreen {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .bottom {
+        border-top-#{$start}-radius: 0;
+        border-top-#{$end}-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 1rem 4rem;
+        background: #fff;
+
+        .btn {
+            color: #fff;
+            padding: 5px 20px;
+            background: linear-gradient(150deg, #F15757 50%, #E45555 50%);
+
+            &:nth-of-type(2) {
+                background: #ccc;
+            }
+        }
+    }
+}
+
+.modal-content.success {
+    .top {
+        background: linear-gradient(45deg, #05A47B 50%, rgb(3, 136, 103));
+    }
+
+    .bottom {
+        .btn {
+            background: linear-gradient(45deg, #05A47B 50%, rgb(3, 136, 103));
+        }
+
+    }
+}
+
+.color-model-body {
+    display: flex;
+    flex-wrap: wrap;
+    .color-box {
+        width: 50px;
+        height: 30px;
+        color: #fff;
+        background-color: #F15757;
+        display: inline-block;
+        border: 0.1px solid color(white-color);
+    }
+
+    .color-box.selected {
+        border-width: 3px;
+        border-color: color(color-white);
+    }
+}

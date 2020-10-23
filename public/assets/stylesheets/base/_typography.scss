@@ -1,0 +1,42 @@
+@include font-face('Moteserat regular', ' ../webfonts/Monteserat-regular/Montserrat-Regular', 400);
+@include font-face('Moteserat medium', ' ../webfonts/Monteserat-medium/Montserrat-Medium', 500);
+@include font-face('Moteserat bold', ' ../webfonts/Monteserat-bold/Montserrat-Bold', 700);
+
+
+@include font-face('lateef regular', ' ../webfonts/Lateef-regular', 700);
+
+
+body {
+    font-family: 'Moteserat regular', sans-serif;
+    // font-family: 'lateef regular', sans-serif;
+}
+
+h1.widget-title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: 'Moteserat bold', sans-serif;
+    // font-family: 'lateef regular', sans-serif;
+}
+
+label {
+    font-family: 'Moteserat medium', sans-serif;
+}
+
+th {
+    @extend label;
+}
+
+.form-group {
+    font-size: 1rem;
+}
+
+.btns {
+    .btn {
+
+        font-size: 1.1rem;
+    }
+}
+
+a.sidebar-link {
+    font-family: 'Moteserat medium', sans-serif;
+}

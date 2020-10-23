@@ -1,0 +1,15 @@
+/*-------------------------------
+    Get color function
+--------------------------------*/
+
+@function color($colorName) {
+    @return map-get($colors, $colorName);
+}
+
+/*-------------------------------
+    Get Font function
+--------------------------------*/
+
+@function font($fontFamily) {
+    @return map-get($fonts, $fontFamily);
+}

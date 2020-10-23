@@ -1,0 +1,241 @@
+ 
+.general-table {
+    overflow:auto;
+    div.dataTables_wrapper div.dataTables_length label {
+        font-size:.9rem !important;
+        font-family: 'Moteserat medium', sans-serif
+    }
+    div.dataTables_wrapper div.dataTables_length select {
+        width:70px !important;
+    }
+    margin-top: 2rem;
+
+    .table-edit {
+        tr {
+            font-size: 12px;
+            border-bottom: 1px solid #ddd;
+
+            @include mediumScreen {
+                font-size: 10px;
+            }
+
+            th {
+                background-color: color(primary);
+                color: #fff;
+                border: none;
+                @include padding($top:0.75rem,$right:0,$bottom:0.75rem,$left:0);
+                letter-spacing: .5px;
+                text-transform: uppercase;
+            }
+
+            td {
+                color: color(primary);
+                border: none;
+                vertical-align: middle;
+                @include padding($top:0.75rem,$right:.25rem,$bottom:0.75rem,$left:.25rem);
+            }
+            td[data-label="Colors"] {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                span{
+                    display: flex;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    @include margin($bottom: 5px, $right: 5px);
+                }
+            }
+            td[data-label="Status"]{
+                span{
+                    background: #21AD64;
+                    color: color(white-color);
+                    @include padding($top:6px,$right:8px,$bottom:6px,$left:8px);
+                    border-radius: 5px;
+                }
+            }
+
+            
+            td[data-label="Products"] {
+                span{
+                    cursor: pointer;
+                    background: color(secondary);
+                    color: color(white-color);
+                    @include padding($top:6px,$right:15px,$bottom:6px,$left:15px);
+                    border-radius: 5px;
+                }
+            }
+            td:last-of-type {
+                display: flex;
+                justify-content: center;
+            }
+
+
+            button {
+                color: #fff;
+                @include padding($top:2px,$right:5px,$bottom:2px,$left:5px);
+                &:last-of-type{
+                    @include margin($right: 0);
+                }
+            }
+            button.list-b{
+                background: #6c757d !important;
+            }
+            button.edit{
+                background: #21AD64 !important;
+            }
+            button.delet{
+                background: #DE4942 !important;
+            }
+        }
+
+    }
+}
+
+
+
+@media (min-width: 991px) and (max-width: 1206px){
+    .widget {
+        .container-fluid{
+            @include padding($top: 0, $right: 5px, $bottom: 0, $left: 5px);
+            .table th{
+                @include padding($top: 0.75rem, $right: 0.45rem, $bottom: 0.75rem, $left: 0.45rem);
+                font-size: 13px;
+            }
+            .general-table .table-edit .row-edit th{
+                font-size: 11px;
+            }
+            .table tbody .row-edit td{
+                font-size: 11px;
+                @include padding($top:.45rem,$right:.25rem,$bottom:.45rem,$left:.25rem);
+            }
+            td[data-label="Status"]{
+                span{
+                    font-size: 10px;
+                    @include padding($top:2px,$right:3px,$bottom:2px,$left:3px);
+                }
+            }
+            .general-table .table-edit .row-edit button{
+                font-size: 12px;
+                @include padding($top: 3px, $right: 4px, $bottom: 3px, $left: 4px);
+            }
+            // td[data-label="action"]{
+            //     // display: table-cell;
+            // }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .table-section .general-table .table-edit .row-edit {
+        border: none;
+    }
+
+    /* Force table to not be like tables anymore */
+    .general-table {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            #{$end}: -9999px;
+        }
+
+        tr {
+            @include margin($top:0, $right:0, $bottom:25px, $left:0);
+        }
+
+        tr:nth-child(odd) {
+            background: color(primary);
+            border-radius: 5px;
+            @include padding($top:15px);
+
+            td {
+                color: #fff !important;
+            }
+        }
+        tr:nth-child(even) {
+            background:  #f1efefa6;
+            border-radius: 5px;
+            @include padding($top:15px);
+
+            td {
+                color: color(primary) !important;
+            }
+        }
+
+        td{
+            /* Behave  like a "row" */
+            position: relative;
+            @include padding($top:0, $right:0, $bottom:15px, $left:50% !important);
+
+        }
+        tbody td{
+            @include padding($top:0.65rem,$right:0.5rem,$bottom:0.65rem,$left:0.5rem);
+            font-size: 12px;
+        }
+        
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            content: attr(data-label);
+            /* Top/left values mimic padding */
+            #{$start}: 20px;
+            width: 35%;
+            @include padding($right:10px);
+            white-space: nowrap;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: .5px;
+            text-align: $start;
+        }
+    }
+    .general-table .table-edit .row-edit{
+        border-bottom: none;
+        @include margin($bottom:0);
+    }
+    
+    .general-table .table-edit .row-edit:nth-child(odd) td{
+        border-bottom: 0.5px solid #5f5f5f;
+        &:last-of-type{
+            border-bottom: none;
+        }
+    }
+    .general-table .table-edit .row-edit:nth-child(even) td{
+        border-bottom: 0.5px solid #dcdbdbfa;
+        &:last-of-type{
+            border-bottom: none;
+        }
+    }
+    .general-table .table-edit .row-edit td:last-of-type{
+        justify-content: center !important;
+    }
+    .general-table .table-edit .row-edit button{
+        font-size: 13px;
+        @include padding($top: 2px, $right: 6px, $bottom: 2px, $left: 6px);
+        &:last-of-type{
+            @include margin($right:0 !important);
+        }
+    }
+    
+    .general-table .table-edit .row-edit td[data-label="Status"]{
+        span{
+            @include padding($top:3.5px,$right:10px,$bottom:3.5px,$left:10px);
+        }
+    }
+
+    /*
+        Label the data You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.*/
+  
+}

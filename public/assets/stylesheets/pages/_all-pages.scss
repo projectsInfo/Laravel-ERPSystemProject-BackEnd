@@ -1,0 +1,123 @@
+/*--------------------------
+    Imports Login
+----------------------------*/
+
+@import '_Login-page/login-page';
+
+/*--------------------------
+    Imports Dashboard
+----------------------------*/
+
+@import '1_Dashboard/dashboard';
+
+/*--------------------------
+    Imports HR - Departments
+----------------------------*/
+
+@import '2_HR/Departments/departments';
+
+/*--------------------------
+    Imports HR - Manage users
+----------------------------*/
+
+@import '2_HR/Manage_Users/manage-users';
+
+/*--------------------------
+    Imports HR - Profile
+----------------------------*/
+
+@import '2_HR/Profile/profile';
+
+/*--------------------------
+    Import CRM - new clients
+----------------------------*/
+
+@import '3_CRM/New_Clients/new-clients';
+
+/*--------------------------
+    Imports CRM - All Clients
+----------------------------*/
+
+@import '3_CRM/All_Clients/all-clients';
+
+/*---------------------------------
+    Imports Orders - New Orders
+-----------------------------------*/
+
+@import '4_Client-Orders/New_Client-Order/new-client-orders';
+
+/*--------------------------
+    Imports Orders - All Orders
+----------------------------*/
+
+@import '4_Client-Orders/All_Client-Orders/all-client-orders';
+
+/*--------------------------
+    Imports Outsourcing - Suppliers
+----------------------------*/
+
+@import '5_Outsourcing/Supplier_Company/supplier-company';
+
+/*----------------------------------
+    Imports Warehouse - Products
+------------------------------------*/
+
+@import '6_Warehouse/Products/products';
+
+/*-------------------------------------------
+    Imports Warehouse - Suppliers orders
+---------------------------------------------*/
+
+@import '6_Warehouse/Suppliers-order/suppliers-order';
+
+/*---------------------------------------------
+    Imports Warehouse - Warehouse places
+-----------------------------------------------*/
+
+@import '6_Warehouse/Warehouse-Places/warehouse-places';
+
+/*---------------------------------------------
+    Imports Accounting - Accounts
+-----------------------------------------------*/
+
+@import '7_Accounting/Accounts/accounts';
+
+/*---------------------------------------------
+    Imports Accounting - shipping-company
+-----------------------------------------------*/
+
+@import '7_Accounting/shipping-company/shipping-company';
+
+/*---------------------------------------------
+    Imports Accounting - cabinet
+-----------------------------------------------*/
+
+@import '7_Accounting/cabinet/cabinet';
+
+
+/*---------------------------------------------
+    Imports Accounting - americanJournal
+-----------------------------------------------*/
+
+@import '7_Accounting/americanJournal';
+
+/*---------------------------------------------
+    Imports Accounting - trialBalance
+-----------------------------------------------*/
+
+@import '7_Accounting/trialBalance';
+
+
+/*---------------------------------------------
+    Imports Invoice
+-----------------------------------------------*/
+@import '9_invoice/invoice';
+
+/*---------------------------------------------
+    Imports Company
+-----------------------------------------------*/
+@import '5_Outsourcing/Delivery_Company/delivery-company';
+/*---------------------------------------------
+    Imports Voucher
+-----------------------------------------------*/
+@import '11_Voucher/voucher';

@@ -1,0 +1,33 @@
+
+.general-search {
+    label {
+        display: inline !important;
+        @include padding($right:14px);
+        font-size:.9rem;
+    }
+    input {
+        display: inline-block;
+        width:70% !important;
+        @media (max-width: 767px) {
+            width:100% !important;
+        }
+        
+    }
+    select {
+        display: inline-block;
+        width:47% !important;
+        @media (max-width: 767px) {
+            width:100% !important;
+        }
+    }
+    .search_btn {
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+}
+  
+select {
+    padding: 0 .75rem !important;
+}
+   

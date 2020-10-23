@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Master Screen Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/vendor/animate.css">
+    <link rel="stylesheet" href="Font-Awesome/all.min.css">
+    <link rel="stylesheet" href="stylesheets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/main-ltr.css">
+    <!-- For Arabic Language -->
+    <!-- <link rel="stylesheet" href="stylesheets/vendor/bootstrapRTL.min.css">
+        <link rel="stylesheet" href="stylesheets/main-rtl.scss"> -->
+</head>
+
+<body>
+
+    <section class="wrapper d-flex">
+        <!-- sidebar -->
+        <nav class="sidebar">
+
+            <!-- Sidebar header (logo and comp name -->
+
+            <div class="sidebar-header">
+                <div class="container">
+                    <div class="row position-relative">
+                        <div class="col-sm-12 logo d-flex justify-content-center">
+                            <img class="img-fluid" src="imgs/logo.png" alt="logo">
+                        </div>
+                        <div class="col-sm-12 logo-text justify-content-center">
+                            <h3 class="display-1">Achilles Shoes</h3>
+                        </div>
+                        <span class="close-sidebar"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Links -->
+            <ul class="list-unstyled nice">
+                <!-- 1 Home Dashboard -->
+                <li>
+                    <a class="sidebar-link collapsed dashboard active" href="#">
+                        <div>
+                            <i class="fa fa-home fa-w-20"></i> <span class="link-text">Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+                <!-- 2 HR Menu : New Clients - All Clients -->
+                <li>
+                    <a class="sidebar-link collapsed" href="#hrSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fa fa-users"></i> <span class="link-text">HR</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="hrSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li>
+                            <a class="submenu-link" href="#">Manage users</a>
+                        </li>
+                        <li>
+                            <a class="submenu-link" href="#">Departments</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 3 CRM Menu : New Clients - All Clients -->
+                <li>
+                    <a class="sidebar-link collapsed" href="#crmSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fas fa-chart-pie"></i> <span class="link-text">CRM</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="crmSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li>
+                            <a class="submenu-link" href="#">New Clients</a>
+                        </li>
+                        <li>
+                            <a class="submenu-link" href="#">All Clients</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 4 Orders Menu : New Orders - All Orders -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#ordersSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fa fa-list-alt"></i> <span class="link-text">Orders</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="ordersSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">New Orders</a></li>
+                        <li><a class="submenu-link" href="#">All Orders</a></li>
+                    </ul>
+
+                </li>
+                <!-- 5 Outsourcing Menu : Suppliers - Delivery Company -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#outsourcingSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="far fa-handshake"></i> <span class="link-text">Outsourcing</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="outsourcingSubMenu" class="collapse list-unstyled link-submenu"
+                        aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Suppliers</a></li>
+                        <li><a class="submenu-link" href="#">Delivery Company</a></li>
+                    </ul>
+
+                </li>
+                <!--  6 Warehouse Menu : Warehouses - Suppliers Orders - Products - Reports -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#warehouseSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fa fa-warehouse"></i> <span class="link-text">Warehouse</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="warehouseSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Warehouse Places</a></li>
+                        <li><a class="submenu-link" href="#">Products</a></li>
+                        <li><a class="submenu-link" href="#">Reports</a></li>
+                    </ul>
+
+                </li>
+                <!--  7 Accounting Menu : Discounts - Chipping Fees - Invoices -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#accountingSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fas fa-chart-line"></i> <span class="link-text">Accounting</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="accountingSubMenu" class="collapse list-unstyled link-submenu"
+                        aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Discounts</a></li>
+                        <li><a class="submenu-link" href="#">Chiping Fees</a></li>
+                        <li><a class="submenu-link" href="#">Invoices</a></li>
+                    </ul>
+
+                </li>
+                <!--  8 Returned Menu : Reasons - Products Returned -->
+                <li>
+
+                    <a class="sidebar-link collapsed" href="#returnedsSubMenu" role="button" id="sidebarLink"
+                        data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <i class="fas fa-undo"></i> <span class="link-text">Returneds</span>
+                        </div>
+                        <i class="angle-icon fa fa-angle-down"></i>
+                    </a>
+
+                    <ul id="returnedsSubMenu" class="collapse list-unstyled link-submenu" aria-labelledby="sidebarLink">
+                        <li><a class="submenu-link" href="#">Reasons</a></li>
+                        <li><a class="submenu-link" href="#">Returned Products</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Content -->
+
+        <div class="content">
+
+            <!-- Top Bar -->
+
+            <nav class="topbar navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid flex-nowrap">
+
+
+                    <button class="sidebar-collapse" type="button" id="sidebarCollapse">
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                    </button>
+
+                    <div class="user d-flex">
+                        <div class="bell">
+                            <a href="#"><i class="fa fa-bell"></i></a>
+                        </div>
+
+                        <div class="lang">
+                            <a href="#">en</a>
+                            <a href="#" class="d-none">ar</a>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="userDropdownBtn"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Username
+                            </button>
+                            <div class="dropdown-menu" id="userDropdownMenu" aria-labelledby="topbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fa fa-user"></i> <span>profile</span></a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i><span>logout</span></a>
+                            </div>
+                        </div>
+
+                        <div class="user-img">
+                            <img class="img-fluid" src="imgs/unknown-user.png" alt="user-img">
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+            <main>
+
+                <section id="tableSection" class="widget invoices">
+                    <div class="container-fluid">
+                        <h1 class="widget-title mb-0">Invoices</h1>
+                        <div class="widget-content table mt-5">
+                            <!-- All tabs links -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <!-- orders invoices -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="clientOrders-tab" data-toggle="tab" href="#clientOrders" role="tab" aria-controls="clientOrders" aria-selected="true">Client Orders</a>
+                                </li>
+                                <!-- suppliers order invoices -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="supplierOrders-tab" data-toggle="tab" href="#supplierOrders" role="tab" aria-controls="supplierOrders" aria-selected="false">Supplier Orders</a>
+                                </li>
+                                <!-- Returned invoices -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="returneds-tab" data-toggle="tab" href="#returneds" role="tab" aria-controls="returneds" aria-selected="false">Returneds</a>
+                                </li>
+                                <!-- Shipping invoices -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">Shiping</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="clientOrders" role="tabpanel" aria-labelledby="clientOrders-tab">
+                                    <form class="general-search">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-5">
+                                                <div class="form-group">
+                                                    <label for="username">Search</label>
+                                                    <input type="search" class="form-control" id="filter" placeholder="Type to search...">
+                                                </div>
+                                    
+                                            </div>
+                                    
+                                            <div class="col-7 col-sm-3 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="departments">Filter By</label>
+                                                    <select id="filter" class="form-control">
+                                                        <option class="form-control">Client Order ID</option>
+                                                        <option class="form-control">Client Name</option>
+                                                        <option class="form-control">Client Mobile</option>
+                                                        <option class="form-control">Order Date</option>
+                                                        <option class="form-control">Order Due Date</option>
+                                                        <option class="form-control">Total</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-sm-3 col-lg-3">
+                                                <button type="button" id="search_btn" class="general-btn search_btn">
+                                                    <i class="fas fa-search"></i> Search </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                    <div class="general-table table-responsive-md supplier-table">
+                                        <table id="generalTable" class="text-center table-edit table">
+                                            <thead>
+                                                <tr class="row-edit">
+                                                    <th><span>Client Order ID</span></th>
+                                                    <th><span>Client Name</span></th>
+                                                    <th><span>Client Mobile</span></th>
+                                                    <th><span>Order Date</span></th>
+                                                    <th><span>Order Due Date</span></th>
+                                                    <th><span>Price</span></th>
+                                                    <th><span>Total</span></th>
+                                                    <th><span>Actions</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    
+                                    <!-- Pagination -->
+                                    
+                                    <div class="mt-4 pagination d-flex justify-content-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&lsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="PaginationActive page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&rsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="supplierOrders" role="tabpanel" aria-labelledby="supplierOrders-tab">
+                                    <form class="general-search">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-5">
+                                                <div class="form-group">
+                                                    <label for="username">Search</label>
+                                                    <input type="search" class="form-control" id="filter" placeholder="Type to search...">
+                                                </div>
+                                    
+                                            </div>
+                                    
+                                            <div class="col-7 col-sm-3 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="departments">Filter By</label>
+                                                    <select id="filter" class="form-control">
+                                                        <option class="form-control">Order ID</option>
+                                                        <option class="form-control">Supplier Name</option>
+                                                        <option class="form-control">Order Date</option>
+                                                        <option class="form-control">Status</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-sm-3 col-lg-3">
+                                                <button type="button" id="search_btn" class="general-btn search_btn">
+                                                    <i class="fas fa-search"></i> Search </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                    <div class="general-table table-responsive-md supplier-table">
+                                        <table id="generalTable" class="text-center table-edit table">
+                                            <thead>
+                                                <tr class="row-edit">
+                                                    <th><span>No.</span></th>
+                                                    <th><span>Order ID</span></th>
+                                                    <th><span>Supplier Name</span></th>
+                                                    <th><span>Order Date</span></th>
+                                                    <th><span>Order Due Date</span></th>
+                                                    <th><span>Price</span></th>
+                                                    <th><span>Status</span></th>
+                                                    <th><span>Action</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    
+                                    <!-- Pagination -->
+                                    
+                                    <div class="mt-4 pagination d-flex justify-content-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&lsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="PaginationActive page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&rsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="returneds" role="tabpanel" aria-labelledby="returneds-tab">
+                                    <form class="general-search">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-5">
+                                                <div class="form-group">
+                                                    <label for="username">Search</label>
+                                                    <input type="search" class="form-control" id="filter" placeholder="Type to search...">
+                                                </div>
+                                    
+                                            </div>
+                                    
+                                            <div class="col-7 col-sm-3 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="departments">Filter By</label>
+                                                    <select id="filter" class="form-control">
+                                                        <option class="form-control">Order ID</option>
+                                                        <option class="form-control">Supplier Name</option>
+                                                        <option class="form-control">Order Date</option>
+                                                        <option class="form-control">Status</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-sm-3 col-lg-3">
+                                                <button type="button" id="search_btn" class="general-btn search_btn">
+                                                    <i class="fas fa-search"></i> Search </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                    <div class="general-table table-responsive-md supplier-table">
+                                        <table id="generalTable" class="text-center table-edit table">
+                                            <thead>
+                                                <tr class="row-edit">
+                                                    <th><span>No.</span></th>
+                                                    <th><span>Order ID</span></th>
+                                                    <th><span>Supplier Name</span></th>
+                                                    <th><span>Order Date</span></th>
+                                                    <th><span>Order Due Date</span></th>
+                                                    <th><span>Price</span></th>
+                                                    <th><span>Status</span></th>
+                                                    <th><span>Action</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    
+                                    <!-- Pagination -->
+                                    
+                                    <div class="mt-4 pagination d-flex justify-content-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&lsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="PaginationActive page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&rsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                                    <form class="general-search">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-5">
+                                                <div class="form-group">
+                                                    <label for="username">Search</label>
+                                                    <input type="search" class="form-control" id="filter" placeholder="Type to search...">
+                                                </div>
+                                    
+                                            </div>
+                                    
+                                            <div class="col-7 col-sm-3 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="departments">Filter By</label>
+                                                    <select id="filter" class="form-control">
+                                                        <option class="form-control">Order ID</option>
+                                                        <option class="form-control">Supplier Name</option>
+                                                        <option class="form-control">Order Date</option>
+                                                        <option class="form-control">Status</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-sm-3 col-lg-3">
+                                                <button type="button" id="search_btn" class="general-btn search_btn">
+                                                    <i class="fas fa-search"></i> Search </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                    <div class="general-table table-responsive-md supplier-table">
+                                        <table id="generalTable" class="text-center table-edit table">
+                                            <thead>
+                                                <tr class="row-edit">
+                                                    <th><span>No.</span></th>
+                                                    <th><span>Order ID</span></th>
+                                                    <th><span>Supplier Name</span></th>
+                                                    <th><span>Order Date</span></th>
+                                                    <th><span>Order Due Date</span></th>
+                                                    <th><span>Price</span></th>
+                                                    <th><span>Status</span></th>
+                                                    <th><span>Action</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-edit">
+                                                    <td data-label="No."><span>1</span></td>
+                                                    <td data-label="Order ID" class="filter-cell"><span>abcd-1234</span></td>
+                                                    <td data-label="Supplier Name"><span>ahmed ibrahim</span></td>
+                                                    <td data-label="Order Date"><span>30/3/2019</span></td>
+                                                    <td data-label="Order Due Date"><span>30/2/2019</span></td>
+                                                    <td data-label="Price"><span>200eg</span></td>
+                                                    <td data-label="Status"><span>Avilable</span></td>
+                                                    <td data-label="Action" class="d-flex justify-content-center">
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm"
+                                                            class="mr-2 list-b btn">
+                                                            <span><i class="fas fa-list fa-fw"></i></span>
+                                                        </button>
+                                                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-sm" class="mr-2 edit btn">
+                                                            <span><i class="fas fa-edit fa-fw"></i></span>
+                                                        </button>
+                                                         
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    
+                                    <!-- Pagination -->
+                                    
+                                    <div class="mt-4 pagination d-flex justify-content-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&lsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="PaginationActive page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&rsaquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+
+    <!-- Start Global Script -->
+    <script src="scripts/vendor/jquery-3.4.1.min.js"></script>
+    <script src="scripts/vendor/popper.min.js"></script>
+    <script src="scripts/vendor/bootstrap.min.js"></script>
+    <script src="scripts/vendor/jquery.tablefilter.min.js"></script>
+    <script src="scripts/vendor/jquery.validate.min.js"></script>
+    <script src="Font-Awesome/all.min.js"></script>
+    <script src="scripts/vendor/jquery.nicescroll.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- End Global Script -->
+
+</body>
+
+</html>

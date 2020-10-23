@@ -1,0 +1,205 @@
+// All Media Wuery Mixins
+
+@mixin extraLargeScreen {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin largeScreen {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin mediumScreen {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin smallScreen {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobileScreen {
+    @media (min-width: 320px) and (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin print {
+    @media print {
+        @content;
+    }
+}
+
+@mixin smallLaps {
+    @media (min-width: 769px) and (max-media: 1024px) {
+        @content;
+    }
+}
+
+
+// Overlay
+
+@mixin overlay($color, $alpha) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $alpha);
+}
+
+// Prefixer
+
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{ '-' + $prefix + '-' + $property}: $value;
+    }
+
+    #{$property}: $value;
+}
+
+// Animation Mixin
+
+@mixin keyFrame($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+
+}
+
+// Pseudo Mixin
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// Padding Mixin
+
+@mixin padding($width: (null), $top: null, $right: null, $bottom: null, $left: null, $media: null) {
+    @if $media {
+        @media #{$media} {
+            @if $width !=null {
+                padding: $width;
+            }
+
+            @else {
+                padding-top: $top;
+                padding-#{$end}: $right;
+                padding-bottom: $bottom;
+                padding-#{$start}: $left;
+            }
+        }
+    }
+
+    @else {
+        @if $width !=null {
+            padding: $width;
+        }
+
+        @else {
+            padding-top: $top;
+            padding-#{$end}: $right;
+            padding-bottom: $bottom;
+            padding-#{$start}: $left;
+        }
+    }
+}
+
+// Margin Mixin
+
+@mixin margin($width: (null), $top: null, $right: null, $bottom: null, $left: null, $media: null) {
+    @if $media {
+        @media #{$media} {
+
+            @if $width !=null {
+                margin: $width;
+            }
+
+            @else {
+                margin-top: $top;
+                margin-#{$end}: $right;
+                margin-bottom: $bottom;
+                margin-#{$start}: $left;
+            }
+        }
+    }
+
+    @else {
+
+        @if $width !=null {
+            margin: $width;
+        }
+
+        @else {
+            margin-top: $top;
+            margin-#{$end}: $right;
+            margin-bottom: $bottom;
+            margin-#{$start}: $left;
+        }
+    }
+}
+
+// Border Mixin 
+
+
+@mixin border($width: (null),
+    $top: null,
+    $right: null,
+    $left: null,
+    $bottom: null,
+    $color: null,
+    $style: null) {
+
+    @if $width != null {
+        border-width: $width;
+    }
+
+    @else {
+        border-top-width: $top;
+        border-#{end}-width: $right;
+        border-bottom-width: $bottom;
+        border-#{start}-width: $left;
+    }
+    border-style: $style;
+    border-color: $color;
+}
+
+// Position Mixin
+
+@mixin position($type: null, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $type;
+    top: $top;
+    #{$end}: $right;
+    bottom: $bottom;
+    #{$left}: $left;
+}
+
+// Add font-face Mixin 
+// To create needed fonts with all formats
+
+@mixin font-face($font-name, $file-name, $weight: normal) {
+    @font-face {
+        font-family: quote($font-name);
+        src: url($file-name + '.eot');
+        src: url($file-name + '.eot?#iefix') format('embedded-opentype'),
+        url($file-name + '.woff') format('woff'),
+        url($file-name + '.ttf') format('truetype'),
+        url($file-name + '.svg##{$font-name}') format('svg');
+        font-weight: $weight;
+    }
+}

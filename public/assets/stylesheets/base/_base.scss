@@ -1,0 +1,79 @@
+body {
+    background-color: color(body-bg);
+    color: color(primary);
+    direction: $direction;
+}
+
+.table {
+    overflow: hidden;
+}
+
+.wrapper .content {
+    @include padding($left: 240px);
+    transition: padding 0.3s;
+
+    @include mediumScreen {
+        padding: 0;
+    }
+}
+
+.sidebar-folded:not(.open-sidebar-folded) {
+    .wrapper .content {
+        @include padding($left: 60px);
+    }
+}
+
+label.error {
+    color: color(error);
+    margin-top: 10px;
+
+    &::before {
+        content: '\2718';
+        @include margin($right:10px);
+    }
+
+}
+
+label.validation-valid-label {
+    color: color(success-dark);
+
+    &::before {
+        content: '\2713';
+    }
+}
+
+input,
+label,
+select,
+button {
+    user-select: none;
+}
+
+input:not(input[type="radio"]),
+select,
+textarea {
+    &:focus {
+        box-shadow: 0 0 0 0.1rem rgba(241, 141, 64, 0.8) !important;
+    }
+}
+
+.back-loader {
+    display: none;
+}
+
+.select2-container .select2-selection--single {
+    height: 38px;
+    border:1px solid #ccc;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    @include padding($top:5px, $bottom:5px);
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    margin-top: 5px;
+}

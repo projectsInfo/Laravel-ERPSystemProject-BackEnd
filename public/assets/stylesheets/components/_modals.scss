@@ -1,0 +1,20 @@
+.modal {
+    padding: 0 !important;
+
+    .modal-lg {
+
+        min-width: 80% !important;
+        margin: 30px auto;
+
+        @include mediumScreen {
+            min-width: 95% !important;
+        }
+        
+
+        .modal-content.widget {
+            border: none;
+            margin: 0;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.rotate {
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+}
+
+label.validation-succeeded {
+    color: color(success);
+
+    &::before {
+        content: '\ee73'
+    }
+}
+
+.colr-tag {
+    width: auto;
+    display: inline-block;
+    border-radius: 5px;
+    color: color(white-color);
+    @include padding(10px 20px);
+    border: 1px solid color(primary);
+}
+
+.control {
+    @include position($type: sticky, $top: 235px);
+    display: inline-block;
+    z-index: 99;
+    @include padding(30px 20px);
+    background-color: rgba(255, 255, 255, 0.9);
+    @include margin($bottom: 30px);
+    border-radius: 0 50px 5px 0;
+
+    .total {
+
+        color: color(secondary);
+
+        p span:first-of-type {
+            font-weight: 600;
+            font-size: 16px;
+            color: color(primary);
+        }
+
+        p span:last-of-type {
+            @include padding($left: 10px, $right: 10px);
+            color: color(secondary);
+        }
+    }
+}
+
+.control-modal {
+    @extend .control;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.textAreaHeight {
+    height: 38px !important;
+    resize: none;
+}
+
+.danger {
+    background: color(error);
+}
+.close {
+    font-size:60px;
+}
+
+
+.responsive-btn {
+    @media (min-width:991px) and (max-width:1280px) {
+        width:100% !important;
+    }
+}
+
+
+.activeInput {
+    background: color(secondary) !important;
+}
+
+.active-input-radio {
+    background: color(secondary) !important;
+    color:color(white-color);
+    border:1px solid color(white-color);
+}
+
+.white-space-nowrap {
+    white-space: nowrap !important;
+}
+
+.active-proccess {
+    &::before {
+        content:'\2714' !important;
+    }
+}
+
+label.match-height {
+    white-space: nowrap;
+    line-height:38px;
+}
+
+.w-48 {
+    width:48% !important;
+}
+.w-380 {
+    width:380px !important;
+}
